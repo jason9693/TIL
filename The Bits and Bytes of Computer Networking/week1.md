@@ -9,15 +9,12 @@
 4. Transport : 어느 클라이언트, 혹은 서버 프로그램이 데이터를 취득할지 sort out 한다.
 	* ex. ) TCP ( Transmission Control  Protocol ) , UDP ( User Datagram Protocol )
 5. Application
-
-ex. ) 택배전송 묘사: 네트워크 5계층을 택배전송에 비유하면 다음과 같다.
-
-	* ![](week1/screenshot%202019-04-30%20PM%209.25.45.png)
-
+- - - -
+* ex. ) 택배전송 묘사: 네트워크 5계층을 택배전송에 비유하면 다음과 같다.![](week1/screenshot%202019-04-30%20PM%209.25.45%202.png) 
 	* 트럭, 도로( Physical ) -> 한 블럭 사이를 어떻게 갈것인가( Data Link ) -> a : b 로 가기 위해 어떤길을 선택할것인가 ( Network ) -> 배송지에 어떻게 노크할것인가 ( Transport ) -> 소포 ( Application )
 
 cf ) OSI 7계층 : 5계층과는 달리 Application Layer을 총 3개의 층으로 추상화 한다.
-
+- - - -
 
 ## The Basics Of Networking Devices
 1. Cables : 여러 디바이스들을 물리적으로 연결.
@@ -30,8 +27,7 @@ cf ) OSI 7계층 : 5계층과는 달리 Application Layer을 총 3개의 층으�
 	1. Hub : Physical Layer의 device.  **같은 네트워크** (LAN : Local Area Network)의 여러 컴퓨터와 **동시에** 연결시켜줌.
 		* cf ) Collision Domain : 특정 시간엔 오직 한 디바이스만 통신할 수 있는 하나의 네트워크 세그먼트.
 	2. Network Switch : Hub와는 달리 한 단계 위(Data Link) 층의 디바이스이다.
-		* 스위치는 ethernet 프로토콜 데이터의 내용을 inspect 할 수 있다. -> 스위치는 각각의 포트(연결된 회선 하나)가 하나의 Collision Domain에 있음.
-		* ![](week1/screenshot%202019-04-30%20PM%209.44.01.png)
+		* 스위치는 ethernet 프로토콜 데이터의 내용을 inspect 할 수 있다. -> 스위치는 각각의 포트(연결된 회선 하나)가 하나의 Collision Domain에 있음.![](week1/screenshot%202019-04-30%20PM%209.44.01%202.png)
 
 3. Routers : 독립적인 네트워크들 사이에서 데이터를 forward하는 방식을 알고 있는 장비.  ( Network Layer Device)
 	* Internal Table
@@ -50,11 +46,11 @@ cf ) OSI 7계층 : 5계층과는 달리 Application Layer을 총 3개의 층으�
 	* Modulation : 케이블간을 왔다갔다 하는 voltage를 다양화 하는 방법의 표준.
 
 2. Twisted Pair Cabling and Duplexing
-	* Duplex Communication : 케이블의 양방향에서 정보가 흘러갈수 있게 하는 개념![](week1/screenshot%202019-05-01%20AM%2011.09.52.png)
-	* Simplex Communication : 단방향 ![](week1/screenshot%202019-05-01%20AM%2011.07.14.png)
+	* Duplex Communication : 케이블의 양방향에서 정보가 흘러갈수 있게 하는 개념![](week1/screenshot%202019-05-01%20AM%2011.09.52%202.png)
+	* Simplex Communication : 단방향 ![](week1/screenshot%202019-05-01%20AM%2011.07.14%202.png)
 	
 3. Network Ports and Patch Panels
-	* Network Port : 디바이스에 직접적으로 부착되며, 컴퓨터 네트워크를 구성한다.![](week1/screenshot%202019-05-01%20AM%2011.13.47.png)
+	* Network Port : 디바이스에 직접적으로 부착되며, 컴퓨터 네트워크를 구성한다.![](week1/screenshot%202019-05-01%20AM%2011.13.47%202.png)
 	* Patch Panel : 많은 포트들을 containing하는 장비. 하지만 이것 이외의 역할은 없다.
 
 
@@ -69,16 +65,16 @@ cf ) OSI 7계층 : 5계층과는 달리 Application Layer을 총 3개의 층으�
 	-> **이더넷**은 **MAC Address**를 데이터 전송시에, 전송하는 머신과 수신하는 머신의 MAC Address를 모두 가지고 확인하는데에 사용한다. 
 
 2. Unicast, Multicast, Broadcast
-	* Unicast : 수신주소가 오직 딱 하나인 전송. ( 이더넷 프레임에서 첫번째 옥텟의 최소비트가 0이다. )![](week1/screenshot%202019-05-01%20PM%201.18.43.png)
+	* Unicast : 수신주소가 오직 딱 하나인 전송. ( 이더넷 프레임에서 첫번째 옥텟의 최소비트가 0이다. )![](week1/screenshot%202019-05-01%20PM%201.18.43%202.png)
 	
-	* Multicast : 수신주소가 여러곳인 전송.![](week1/screenshot%202019-05-01%20PM%201.17.44.png)
+	* Multicast : 수신주소가 여러곳인 전송.![](week1/screenshot%202019-05-01%20PM%201.17.44%202.png)
 	
-	* Broadcast : 수신주소가 모든 LAN에 연결된 대상인 전송, **모든 주소값이 F이다.**![](week1/screenshot%202019-05-01%20PM%201.16.43.png)
+	* Broadcast : 수신주소가 모든 LAN에 연결된 대상인 전송, **모든 주소값이 F이다.**![](week1/screenshot%202019-05-01%20PM%201.16.43%202.png)
 
 3. Dissecting an Ethernet Frame
 	* Data Packet : 모든 네트워크 링크를 오고가는 모든 바이너리 데이터들을 나타내는 포괄적인 용어.
 	* Ethernet Frame : 상당히 구조화된 특정 순서로 나타내어지는 정보의 Collection (데이터 패킷은 이더넷 레벨 안에 있음)
-	 ![](week1/screenshot%202019-05-01%20PM%201.28.32.png)
+	 ![](week1/screenshot%202019-05-01%20PM%201.28.32%202.png)
 		* Preamble
 			* ~ 7byte : 0과 1의 반복
 			* SFD ( Last Byte ) : Start Frame Delimiter
