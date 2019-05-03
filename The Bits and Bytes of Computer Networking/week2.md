@@ -69,7 +69,7 @@
 * Router : 트래픽에서 목적지 주소에 따라 해당 트래픽을 forward 하는 장비.
 
 * Basic Routing Concepts
-  ![screenshot](assets/screenshot-6857280.png)![screenshot 1](assets/screenshot 1.png)
+  ![screenshot](assets/screenshot-6857280.png)![screenshot%201](assets/screenshot%201.png)
 
   * 라우팅은, 여러 라우터를 간접적으로 거쳐서 최종 목적지에 도달하기도 한다.
 
