@@ -13,7 +13,7 @@
 * IP Datagrams and Encapsulation
   * ip datagram : 고도로 추상화된 엄격하게 정의된 필드들의 series ( **네트워크 레이어의 패킷**)
     
-    * ![03fig03](../The Bits and Bytes of Computer Networking/assets/03fig03.png)
+    * ![03fig03](assets/03fig03.png)
     * Version : 일반적인 ip는 v4를 사용한다.
     * Header Length : IPv4기준으로 보통 20 byte를 사용한다.
     * Service Type : 해당 8비트의 타입은 QoS(Quality of Service)테크닉을 구체화 하는데에 사용된다
@@ -90,7 +90,7 @@
 
 * Routing Protocols : 라우터간에 라우팅 정보의 교환 및 라우팅 테이블의 유지 관리를 동적으로 수행하는 프로토콜
 
-  ![screenshot 2](assets/screenshot 2.png)
+  ![screenshot 2](assets/screenshot%202.png)
 
   * interior gateway protocols : 
     * Distance Vector : 라우팅 테이블에 거리와 방향만을 기록한다. ( 인접 라우터 )
