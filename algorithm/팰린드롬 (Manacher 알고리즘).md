@@ -21,7 +21,7 @@
 * 짝수 팰린드롬
 -> 사이사이에 문자열 토큰 삽입.
 
-```
+```c++
 string addTocken(string s) {
         string result = "";
         for(auto it = s.begin() ; it < s.end(); it++) {
