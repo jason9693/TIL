@@ -38,9 +38,9 @@
           - FIN ( Finish ) : 이부분이 1이면, 전송컴퓨터는 더이상 추가적인 데이터를 전송하지 않고, 연결 종료가 시작된다.
       - Hand Shake : 2개의 디바이스가 서로 같은 프로토콜이고, 서로 이해 가능한지 확인하는 방법.
         - 3-way handshake : 연결을 시작할때
-          - ![screenshot 1](assets/screenshot 1-7404968.png)
+          - ![screenshot 1](assets/screenshot1-7404968.png)
         - 4-way handshake : 연결을 종료할때
-          - ![screenshot 10](assets/screenshot 10.png)
+          - ![screenshot 10](assets/screenshot10.png)
       - TCP 소켓 상태
         - socket : 어딘가에서 정의되어있는 실제 무언가를 구현해 놓은것
         - LISTEN : TCP 소켓이 들어오는 연결을 들을 준비가 되어있음을 알림.
